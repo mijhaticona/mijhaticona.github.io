@@ -1,0 +1,195 @@
+.arriva {
+    background-color: #21618c;
+    background-size: cover;
+    padding-top: 2 rem;
+    padding-bottom: 1.8rem;
+    text-align: center;
+    color: white;
+}
+.arriva h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+.arriva p {
+    font-size: 1.25rem;
+	color: white;
+}
+
+.overlay {
+    position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: orange;
+	overflow: hidden;
+	width: 100%;
+	height: 0; 
+	transition: transform 0.02s ease; 
+}
+.container:hover .overlay{
+	bottom: 0;
+	height: 100%; 
+}
+
+.text{
+	white-space:now;
+	line-height: 1.5px;
+	color:white;
+	font-size:20px;
+	text-align:center;
+	font-family: times new roman;
+}
+
+h2{
+	color:orange;
+}
+h5{
+	color:blue;
+}
+
+p{
+	color:black;
+}
+.producto {
+	text-align: center;
+	margin: 10px;	
+}
+
+.producto img{
+	height: 100px;
+	width: 100px;
+}
+
+.thumbnail:hover {
+	box-shadow: -10px 10px 20px rgba(0,0,0,0.4);
+}
+.imagen-zoom {
+    width: 70%;
+    transition: transform 0.4s ease;
+}
+.imagen-zoom:hover {
+    transform: scale(1.1);
+}
+.abajo {
+	background-color: black;
+	text-align: center;
+}
+.abajo p{
+	color: white;
+}
+.abajo a{
+	color: white;
+	font-size: 1rem;
+}
+.orbit {
+  transform: scale(1); /* Ajusta el tamaño, 0.8 significa 80% del tamaño original */
+  float: right; /* Alinea el carrusel a la derecha */
+  width: 60%; /* Ajusta el tamaño del carrusel */
+  margin-right: 0; /* Asegúrate de que no tenga margen a la derecha */
+  margin-left: 20px; 
+}
+.orbit-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.orbit-slide {
+    width: 100%; /* o un ancho específico como 600px */
+    height: 400px; /* altura fija para todas las imágenes */
+    overflow: hidden; /* oculta cualquier desbordamiento */
+}
+
+.container {
+	display: flex;
+	flex-direction: column; /* Los elementos se apilan en una columna */
+	align-items: flex-start; /* Alinea los elementos al inicio (izquierda) */
+	gap: 10px; /* Espacio entre cada rectángulo */
+	padding-left: 100px;
+
+}
+
+/* Estilos de los rectángulos */
+.rectangle {
+	width: 400px; /* Ajusta el ancho según lo necesites */
+	height: 100px;
+	background-color: #21618c;
+	border: 2px solid #2980b9;
+	border-radius: 10px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.rectangle:hover {
+      background-color: #e74c3c; /* Cambia el color de fondo al hacer hover */
+      transform: scale(1.1); /* Aumenta el tamaño del rectángulo */
+      border-color: #c0392b; /* Cambia el color del borde al hacer hover */
+}
+
+summary {
+      cursor: pointer;
+      padding: 10px;
+      background-color: #3498db;
+      color: white;
+      border-radius: 5px;
+      font-size: 16px;
+      width: fit-content;
+}
+
+summary:hover {
+  background-color: #2980b9;
+}
+summary::-webkit-details-marker {
+      display: none;
+    } /* Estilo del contenido al expandir */
+	
+details[open] .producto {
+  animation: fadeIn 0.5s ease;
+}
+
+.carousel-item img {
+	width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+	height: 100%; /* Ajusta la altura de la imagen al contenedor */
+	object-fit: cover; /* Hace que la imagen se ajuste sin distorsión */
+	border-radius: 10px;
+
+}
+.perfil-content {
+	max-width: 800px;
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.carousel-item {
+	height: 1000px; /* Altura fija para todas las diapositivas */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo1 {
+    font-size: 45px;
+    color: white;
+}
+
+.logo2 {
+    font-size: 45px;
+    color: white;
+}
+
+.logo-img {
+    width: 70px;
+} 
+.header{
+    background-color: #21618c;
+    display: flex; /*alinea todo y permite usar align y justify despues*/
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
